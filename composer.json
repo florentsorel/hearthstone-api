@@ -1,0 +1,23 @@
+{
+    "name": "rtransat/hearthstone-api",
+    "description": "hearthstoneapi.com wrapper for Laravel 5",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rtransat",
+            "email": "florent.sorel@gmail.com"
+        }
+    ],
+    "require": {
+      "php": ">=5.4.0",
+      "illuminate/support": "~5.0",
+      "guzzlehttp/guzzle": "~6.0",
+      "symfony/options-resolver": "~2.6"
+    },
+    "autoload": {
+      "psr-4": {
+        "Rtransat\\Hearthstone\\": "src/"
+      }
+    },
+    "minimum-stability": "stable"
+}
