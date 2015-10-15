@@ -9,6 +9,7 @@ Hearthstone API provide a Laravel wrapper for [hearthstoneapi.com](http://hearth
 * [Documentation](#documentation)
 * [Improvements](#improvements)
 * [Contribution Guidelines](#contribution-guidelines)
+* [Node.js](#nodejs)
  
 # <a name="requirements"></a>Requirements
 
@@ -92,7 +93,7 @@ Cards::all($parameters)
 ```
 
 ### `get($name, array $parameters)` ###
-Returns cards by partial name.
+Returns card by name or ID. This may return more then one card if they share the same name. Loatheb returns both the card and the boss.
 ```php
 $name = 'Ysera';
 $parameters = [
@@ -233,3 +234,7 @@ Support follows PSR-2 PHP coding standards.
 
 Please report any issue you find in the issues page.
 Feel free to pull requests. There are welcome :)
+
+# <a name="nodejs"></a>Node.js
+
+This package exists for [Node.js](https://github.com/Rtransat/hearthstone-mashape-nodejs)
